@@ -1,0 +1,66 @@
+/* ---------------- MENU CONTAINER ---------------- */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  background: #dbeafe; /* fons diferent perquè es vegi */
+  padding: 14px;
+  border-radius: 14px;
+  border: 2px solid #1e40ff;
+}
+
+/* ---------------- BOTONS MENU ---------------- */
+
+.menu button {
+  padding: 10px 18px; /* més petit que abans */
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background: #1e40ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  min-width: 110px;
+}
+
+.menu button:hover {
+  background: #1636d6;
+  transform: translateY(-1px);
+}
+
+/* ---------------- QUAN ENTRES A LA WEB ---------------- */
+
+.app > div {
+  background: white;
+  border-radius: 18px;
+  border: 2px solid #e2e8f0;
+  padding: 28px 30px;
+  margin-bottom: 28px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------------- TITOLS SECCIO ---------------- */
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+  font-weight: 800;
+  color: #1e40ff;
+}
+
+/* ---------------- ESPAI EXTRA ENTRE ELEMENTS ---------------- */
+
+.card {
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 18px;
+}
