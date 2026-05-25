@@ -1,41 +1,89 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #eef2f3;
-    margin: 0;
-  }
-  
-  .app {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .menu button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #1abc9c;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .menu button:hover {
-    background-color: #16a085;
-  }
-  
-  select {
-    padding: 8px;
-    font-size: 16px;
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eef2f3;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.menu button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.menu button:hover {
+  background-color: #16a085;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Sistema de graella per als cromos de ciclistes */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.card button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
