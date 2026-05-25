@@ -1,32 +1,16 @@
-// Firebase core
-import { initializeApp, getApps, getApp } from "firebase/app";
-
-// Firebase Auth
+import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
-// Firebase Firestore
-import { getFirestore } from "firebase/firestore";
-
-// ⚠️ Configuració del teu projecte Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyCjhf_S2J2Azx_P0tn38jIk2GNco0JyWNA",
   authDomain: "sgdride.firebaseapp.com",
   projectId: "sgdride",
-  storageBucket: "sgdride.appspot.com",
-  messagingSenderId: "XXXXXXXXXXXX",
-  appId: "1:XXXXXXXXXXXX:web:XXXXXXXXXXXXXXXX",
-  measurementId: "G-XXXXXXXXXX",
+  storageBucket: "sgdride.firebasestorage.app",
+  messagingSenderId: "904116459882",
+  appId: "1:904116459882:web:24a2885ac1beef1026ed13",
+  measurementId: "G-BRZW7TMPVY"
 };
 
-// ✅ Inicialització segura (evita errors en recàrregues)
-const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
-
-// 🔐 Autenticació
-const auth = getAuth(app);
-const provider = new GoogleAuthProvider();
-
-// 🗄️ Base de dades
-const db = getFirestore(app);
-
-// 📦 Exports
-export { auth, provider, db };
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const provider = new GoogleAuthProvider();
