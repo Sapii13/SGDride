@@ -14,14 +14,22 @@ const Sidebar: React.FC<SidebarProps> = ({ onSelect }) => {
   ];
 
   return (
-    <aside className="w-64 bg-white border-r border-gray-200 p-4">
-      <h2 className="text-xl font-semibold mb-4">Menú</h2>
-      <ul className="space-y-2">
+    <aside style={{ width: '250px', backgroundColor: 'white', padding: '15px', borderRight: '1px solid #e0e0e0' }}>
+      <h2 style={{ fontSize: '1.2rem', marginBottom: '15px' }}>Menú</h2>
+      <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
         {sections.map(({ id, label }) => (
-          <li key={id}>
+          <li key={id} style={{ marginBottom: '10px' }}>
             <button
               onClick={() => onSelect(id)}
-              className="w-full text-left px-3 py-2 rounded hover:bg-gray-100 transition"
+              style={{
+                width: '100%',
+                textAlign: 'left',
+                padding: '8px 12px',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                borderRadius: '4px'
+              }}
             >
               {label}
             </button>
